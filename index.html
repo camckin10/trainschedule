@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Schedule</title>
+	<!--bootstrap link-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<!--jquery link-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<!--firebase link-->
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+</head>
+<body>
+	<!--jumbotron section-->
+	<div class="container">
+		<div class="row">
+		<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Train Schedule</h1>
+    <p class="lead">Enter Information at the bottom to see your train! </p>
+  </div>
+</div>
+	</div>
+
+	<!--current employees section-->
+	<div class="row">
+	<div class="col-lg-12">
+	<div class="card">
+  <div class="card-header">Train Schedule </div>
+  <div class="card-body">
+    <table id="table table-inverse table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Time</th>
+      <th scope="col">Track</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Frequency(minutes)</th>
+      <th scope="col">Next Arrival</th>
+      <th scope="col">Minutes Away</th>
+    </tr>
+  </thead>
+</table>
+  </div>
+</div>
+</div>
+</div>
+
+<br>
+<!--form section to add new employee-->
+	<div class="row">
+	<div class="col-lg-12">
+	<div class="card">
+  <div class="card-header">Enter Train</div>
+  <div class="card-body">
+    <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Train Name</label>
+    <input type="text" class="form-control" id="trainname-input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Destination</label>
+    <input type="text" class="form-control" id="destination-input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">First Train Time
+    <input type="text" class="form-control" id="traintime-input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Frequency</label>
+    <input type="text" class="form-control" id="frequency-input" >
+  </div>
+  <button id="buttonclick">Enter Train</button>
+</form>
+  </div>
+</div>
+</div>
+</div>
+	</div>
+</body>
+</html>
