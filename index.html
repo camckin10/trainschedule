@@ -7,15 +7,19 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<!--jquery link-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+
 	<!--firebase link-->
 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Shadows+Into+Light+Two" rel="stylesheet">
 
+  <!--individual stylesheet-->
+  <link rel="stylesheet" href="../trainschedule/style.css">
 </head>
 <body>
 	<!--jumbotron section-->
 	<div class="container-fluid">
 		<div class="row">
-		<div class="jumbotron jumbotron-fluid">
+		<div class="jumbotron">
   <div class="container">
     <h1 class="display-4">Train Schedule</h1>
     <p class="lead">Enter Information at the bottom to see your train! </p>
@@ -29,15 +33,15 @@
 	<div class="card">
   <div class="card-header">Train Schedule </div>
   <div class="card-body">
-    <table id="table table-inverse table-bordered">
+    <table id="train-table">
   <thead>
     <tr>
       <!--<th scope="col">Time</th>-->
       <th scope="col">Train Name</th>
       <th scope="col">Destination</th>
+      <th scope="col">Arrival</th>
       <th scope="col">Frequency</th>
-      <th scope="col"></th>
-      <th scope="col"></th>
+      <!--<th scope="col"></th>-->
     </tr>
   </thead>
 </table>
@@ -47,7 +51,7 @@
 </div>
 
 <br>
-<!--form section to add new employee-->
+<!--form section to add new train information-->
 	<div class="row">
 	<div class="col-lg-10">
 	<div class="card">
@@ -77,5 +81,12 @@
 </div>
 </div>
 	</div>
+
+  <!--individual script file-->
+  <script src="./script.js"></script>
+
+  <!--moment.js link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
 </body>
 </html>

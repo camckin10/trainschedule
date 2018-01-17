@@ -1,0 +1,19 @@
+body { 
+   font-family: 'Righteous', cursive;
+   background-color: #F0FFF0;
+ }
+
+
+ /*jumbotron*/
+ .jumbotron {
+ 	background-color:#3CB371;
+ }
+
+ .card-header {
+ 	background-color: #66CDAA;
+ }
+
+ th { 
+
+	padding-left: 10px;
+  }
